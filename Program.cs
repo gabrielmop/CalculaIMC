@@ -11,22 +11,22 @@ namespace CalculaIMC
             int idade = 26;
             float altura = 1.79f;
             float peso = 76.4f;
-            string categoria = ""; 
+            string categoria = "";
 
 
-            if(idade < 12)
+            if (idade < 12)
             {
 
                 categoria = "infantil";
 
             }
-            if(idade >= 12 && idade <= 20)
+            if (idade >= 12 && idade <= 20)
             {
 
                 categoria = "juvenil";
 
             }
-            if (idade >= 21 && idade <= 65){
+            if (idade >= 21 && idade <= 65) {
 
                 categoria = "Adulto";
             }
@@ -36,7 +36,9 @@ namespace CalculaIMC
             }
 
 
-                double imc = peso / (altura * altura);
+            float imc = peso / (altura * altura);
+
+            
 
             Console.WriteLine(nome);
             Console.WriteLine(sexo);
@@ -44,6 +46,9 @@ namespace CalculaIMC
             Console.WriteLine(altura);
             Console.WriteLine(peso);
             Console.WriteLine(categoria);
+            Console.WriteLine(imc);
+
+    
 
 
 
