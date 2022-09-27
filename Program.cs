@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CalculaIMC
 {
@@ -6,8 +6,11 @@ namespace CalculaIMC
     {
         static void Main(string[] args)
         {
-            string nome = "Gabriel";
-            string sexo = "Masculino";
+            Console.WriteLine("Olá, Bem Vindo ao Software de Calculo de IMC");
+            Console.WriteLine("Escreva Seu nome");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Qual Seu Sexo?");
+            string sexo = Console.ReadLine();
             int idade = 26;
             float altura = 1.79f;
             float peso = 76.4f;
@@ -33,10 +36,11 @@ namespace CalculaIMC
             if (idade > 65) {
 
                 categoria = "idoso";
-            }else {
-             
+            }else
+            {
+
                 Console.WriteLine("Os dados inseridos não são de idade, tente novamente");
-                
+
             }
 
 
@@ -44,13 +48,13 @@ namespace CalculaIMC
 
             
 
-            Console.WriteLine(nome);
-            Console.WriteLine(sexo);
-            Console.WriteLine(idade);
-            Console.WriteLine(altura);
-            Console.WriteLine(peso);
-            Console.WriteLine(categoria);
-            Console.WriteLine(imc);
+            Console.WriteLine($"Nome: {nome}");
+            Console.WriteLine($"Sexo: {sexo}");
+            Console.WriteLine($"idade: {idade}");
+            Console.WriteLine($"Altura: {altura}");
+            Console.WriteLine($"Peso: {peso}");
+            Console.WriteLine($"Categoria: {categoria}");
+            Console.WriteLine($"{nome}, Seu imc é: {imc}");
 
     
 
