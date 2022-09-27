@@ -4,7 +4,20 @@
 
 Desafio de Cáculo de IMC para aprendizado de C#
 
+-Escopo inicial:
 
--Escopo inicial: variaveis de nome, sexo, idade e peso estão Hard-Coded no software, melhorias pra isso virão mais a frente
--Calculo de imc já completado.
--Estrutura de decisão pra categoria completado.
+=Variaveis de nome, sexo, idade e peso estão Hard-Coded no software, melhorias pra isso virão mais a frente
+
+🟢Completados:
+
+-Calculo de imc.
+
+-Estrutura de decisão pra categoria.
+
+🔴To-Do:
+
+Estrutura de decisão pra resultado do IMC
+
+Estrutura de decisão pra recomendação do IMC
+
+Refinamento de código
