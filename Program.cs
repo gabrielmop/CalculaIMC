@@ -33,6 +33,10 @@ namespace CalculaIMC
             if (idade > 65) {
 
                 categoria = "idoso";
+            }else {
+             
+                Console.WriteLine("Os dados inseridos não são de idade, tente novamente");
+                
             }
 
 
