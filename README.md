@@ -6,7 +6,7 @@ Desafio de Cáculo de IMC para aprendizado de C#
 
 -Escopo inicial:
 
-=Variaveis de nome, sexo, idade e peso estão Hard-Coded no software, melhorias pra isso virão mais a frente
+=Variaveis de idade e peso estão Hard-Coded no software, melhorias pra isso virão mais a frente
 
 🟢Completados:
 
