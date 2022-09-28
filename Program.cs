@@ -15,7 +15,7 @@ namespace CalculaIMC
             float altura = 1.79f;
             float peso = 76.4f;
             string categoria = "";
-
+            //float/double.Parse(Console.ReadLine()); - Comando pra ler do console em float/double
 
             if (idade < 12)
             {
