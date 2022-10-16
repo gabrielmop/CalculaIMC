@@ -10,6 +10,8 @@ namespace CalculaIMC
             int resposta;
             do
             {
+                
+                // Declaração de variaveis e inserção de dados
                 Console.Clear();
                 Console.WriteLine("Olá, Bem Vindo ao Software de Calculo de IMC");
 
@@ -41,6 +43,7 @@ namespace CalculaIMC
                 string categoria = "";
 
 
+                //Estrutura de decisão de categoria
                 if (idade < 12)
                 {
 
@@ -65,10 +68,12 @@ namespace CalculaIMC
                 }
 
 
+                //Formula IMC
                 float imc = peso / (altura * altura);
                 
 
 
+                //Rsultado do Formulario
                 Console.Clear();
                 Console.WriteLine($"Nome: {nome}");
                 Console.WriteLine($"Sexo: {sexo}");
@@ -87,6 +92,8 @@ namespace CalculaIMC
 
                 Console.WriteLine("IMC Desejável: Entre 20 e 24 \r\n\r\n");
 
+                
+                //Estrutura decisão IMC
                 if (imc < 20)
                 {
                     Console.WriteLine("RISCO: Muitas complicações de saúde como doenças pulmonares e cardiovasculares podem estar associadas ao baixo peso.");
