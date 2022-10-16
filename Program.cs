@@ -73,7 +73,7 @@ namespace CalculaIMC
                 
 
 
-                //Rsultado do Formulario
+                //Resultado do Formulario
                 Console.Clear();
                 Console.WriteLine($"Nome: {nome}");
                 Console.WriteLine($"Sexo: {sexo}");
