@@ -81,53 +81,69 @@ namespace CalculaIMC
                 Console.WriteLine($"Altura: {altura}");
                 Console.WriteLine($"Peso: {peso}");
                 Console.WriteLine($"Categoria: {categoria} \r\n");
-                Console.WriteLine($"{nome}, Seu imc é: {String.Format("{0:0.00}", imc)}\r\n");
-
-                
-
-
-
 
 
 
                 Console.WriteLine("IMC Desejável: Entre 20 e 24 \r\n\r\n");
 
+
+                Console.WriteLine($"{nome}, Seu imc é: {String.Format("{0:0.00}", imc)}\r\n");
+
+
+
+               
+
                 
                 //Estrutura decisão IMC
                 if (imc < 20)
                 {
+                    Console.WriteLine("Categoria: Peso abaixo do normal");
+                    Console.WriteLine();
                     Console.WriteLine("RISCO: Muitas complicações de saúde como doenças pulmonares e cardiovasculares podem estar associadas ao baixo peso.");
+                    Console.WriteLine();
                     Console.WriteLine("Recomendação Inicial:Inclua carboidratos simples em sua dieta, além de proteínas - indispensáveis para ganho de massa magra. Procure um profissional.");
                 }
                 else if (imc >= 20 && imc <= 24.99999999999)
                 {
+                    Console.WriteLine("Categoria: Imc Normal");
+                    Console.WriteLine();
                     Console.WriteLine("RISCO: Seu peso está ideal para suas referências.");
+                    Console.WriteLine();
                     Console.WriteLine("Recomendação Inicial:Mantenha uma dieta saudável e faça seus exames periódicos.");
                 }
                 else if (imc >= 25 && imc <= 29.99999999999)
                 {
+                    Console.WriteLine("Categoria: Pré - obeso");
+                    Console.WriteLine();
                     Console.WriteLine("RISCO: Aumento de peso apresenta risco moderado para outras doenças crônicas e cardiovasculares.");
+                    Console.WriteLine();
                     Console.WriteLine("Recomendação Inicial:Adote um tratamento baseado em dieta balanceada, exercício físico e medicação. A ajuda de um profissional pode ser interessante.");
                 }
                 else if (imc >= 30 && imc <= 34.99999999999)
                 {
+                    Console.WriteLine("Categoria: Obesidade classe I");
+                    Console.WriteLine();
                     Console.WriteLine("RISCO: Quem tem obesidade vai estar mais exposto a doenças graves e ao risco de mortalidade.");
+                    Console.WriteLine();
                     Console.WriteLine("Recomendação Inicial:Adote uma dieta alimentar rigorosa, com o acompanhamento de um nutricionista e um médico especialista (endócrino).");
                 }
                 else if (imc > 35)
                 {
+                    Console.WriteLine("Categoria: Obesidade classe II");
+                    Console.WriteLine();
                     Console.WriteLine("RISCO:O obeso mórbido vive menos, tem alto risco de mortalidade geral por diversas causas.");
+                    Console.WriteLine();
                     Console.WriteLine("Recomendação Inicial:Procure com urgência o acompanhamento de um nutricionista para realizar reeducação alimentar, um psicólogo e um médico especialista (endócrino).");
                 }
 
-                
+                Console.WriteLine();
                 Console.WriteLine("Deseja Calcular outro IMC? Digite 1 para sim ou 2 para não");
                 int.TryParse(Console.ReadLine(), out resposta);
             } while (resposta == 1);
 
 
 
-
+        
 
 
 
